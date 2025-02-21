@@ -6,8 +6,11 @@ namespace code_first
     {
         public static void Main(string[] args)
         {
-            throw new NotImplementedException();
+            using var context = new MarketContext();
+            context.Database.EnsureCreated();
+            context.Categories.Add(new Category() { Name = "Drivers" });
+            context.Products.Add(new Product() { CategoryId = 1, Name = "SSD Kingston" });
+            context.SaveChanges();
         }
     }
 }
-
