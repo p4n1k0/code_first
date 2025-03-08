@@ -1,4 +1,4 @@
-﻿namespace code_first.Models
+﻿namespace code_first
 {
     public sealed class Product
     {
