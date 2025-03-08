@@ -1,6 +1,4 @@
-﻿using code_first.Models;
-
-namespace code_first
+﻿namespace code_first
 {
     public class Program
     {

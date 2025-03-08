@@ -9,7 +9,7 @@ static class UnitTestDetector
     {
         foreach (Assembly assem in AppDomain.CurrentDomain.GetAssemblies())
         {
-            if (assem.FullName.ToLowerInvariant().StartsWith("xunit"))
+            if (assem.FullName!.ToLowerInvariant().StartsWith("xunit"))
             {
                 _runningFromXUnit = true;
                 break;
