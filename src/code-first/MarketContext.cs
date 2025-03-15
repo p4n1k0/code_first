@@ -1,6 +1,6 @@
 ﻿using Microsoft.EntityFrameworkCore;
 
-namespace code_first
+namespace code_first.Models
 {
     public class MarketContext : DbContext
     {
